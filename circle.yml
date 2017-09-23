@@ -3,8 +3,7 @@ dependencies:
    - sudo apt-get update -y && sudo apt-get install -y openjdk-7-jdk && sudo apt-get install -y groovy; 
    
   post:
-   - groovyc 
-
-test:
-  override:
-    - /bin/true
+   - groovyc HelloGroovy/*
+   
+  test:
+    - groovy HelloGroovy/*
